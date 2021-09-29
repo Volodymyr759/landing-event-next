@@ -36,7 +36,7 @@ export const SendMessageForm = (): JSX.Element => {
 
 	return (
 		<>
-			<div className="col-lg-6 d-flex align-items-stretch contact-form-wrap">
+			<div className="form">
 				<Formik
 					initialValues={{
 						fullName: '',
@@ -76,29 +76,26 @@ export const SendMessageForm = (): JSX.Element => {
 					{props => (
 						<Form method="post" role="form" className="php-email-form">
 							<div className="row">
-								<div className="col-md-6 form-group">
-									<label htmlFor="name">Your Name</label>
+								<div className="form-group col-md-6">
 									<Field name="fullName" className="form-control" type="text" placeholder="Your Name" />
 									<ErrorMessage name="fullName" render={msg => <div className="form-error-message">{msg}</div>} />
 								</div>
-								<div className="col-md-6 form-group mt-3 mt-md-0">
-									<label htmlFor="email">Your Email</label>								{/* <input tyaceholder="Your Email" required /> */}
+								<div className="form-group col-md-6 mt-3 mt-md-0">
 									<Field name="email" className="form-control" type="email" placeholder="Your Email" />
 									<ErrorMessage name="email" render={msg => <div className="form-error-message">{msg}</div>} />
 								</div>
 							</div>
 							<div className="form-group mt-3">
-								<label htmlFor="subject">Subject</label>
 								<Field name="subject" className="form-control" type="text" placeholder="Subject" />
 								<ErrorMessage name="subject" render={msg => <div className="form-error-message">{msg}</div>} />
 							</div>
 							<div className="form-group mt-3">
-								<label htmlFor="message">Message</label>
 								<Field
 									as="textarea"
 									name="messageText"
 									className="form-control"
-									rows={8}
+									placeholder="Message"
+									rows={5}
 									minLength={10}
 									maxLength={500}
 								/>
@@ -107,7 +104,7 @@ export const SendMessageForm = (): JSX.Element => {
 									render={msg => <div className="form-error-message">{msg}</div>}
 								/>
 							</div>
-							<br />
+							<br/>
 							<div className="text-center">
 								<button type="submit" disabled={!props.isValid || props.isSubmitting}>
 									{
