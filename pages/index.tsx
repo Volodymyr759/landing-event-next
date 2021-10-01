@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import { ChangeEvent, useState } from 'react';
+import { BuyTicket } from '../components/BuyTicket/buy-ticket.form';
 import { SendMessageForm } from '../components/send-message-form/send-message';
 import { NotificationType } from '../infrastructure/enums/notification-types.enum';
 import { IEmailObject } from '../infrastructure/interfaces/email-object.interface';
@@ -904,29 +905,9 @@ export default function Home(): JSX.Element {
 									<button type="button" className="btn-close" data-bs-dismiss="modal"
 										aria-label="Close"></button>
 								</div>
-								<div className="modal-body">
-									<form method="POST" action="#">
-										<div className="form-group">
-											<input type="text" className="form-control" name="your-name"
-												placeholder="Your Name"/>
-										</div>
-										<div className="form-group mt-3">
-											<input type="text" className="form-control" name="your-email"
-												placeholder="Your Email"/>
-										</div>
-										<div className="form-group mt-3">
-											<select id="ticket-type" name="ticket-type" className="form-select">
-												<option value="">-- Select Your Ticket Type --</option>
-												<option value="standard-access">Standard Access</option>
-												<option value="pro-access">Pro Access</option>
-												<option value="premium-access">Premium Access</option>
-											</select>
-										</div>
-										<div className="text-center mt-3">
-											<button type="submit" className="btn">Buy Now</button>
-										</div>
-									</form>
-								</div>
+
+								<BuyTicket/>
+								
 							</div>
 						</div>
 					</div>
