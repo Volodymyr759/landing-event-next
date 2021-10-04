@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import { ChangeEvent, useState } from 'react';
 import { BuyTicket } from '../components/BuyTicket/buy-ticket.form';
+import { HotelsList } from '../components/Hotels/hotels';
 import { SectionHeader } from '../components/SectionHeader/section-header';
 import { SendMessageForm } from '../components/SendMessageForm/send-message';
 import { SpeakerList } from '../components/Speakers/speakers';
@@ -357,56 +358,8 @@ export default function Home(): JSX.Element {
 
 				<section id="hotels" className="section-with-bg">
 					<div className="container" data-aos="fade-up">
-						<SectionHeader title="Hotels" description="Her are some nearby hotels" />
-						<div className="row" data-aos="fade-up" data-aos-delay="100">
-							<div className="col-lg-4 col-md-6">
-								<div className="hotel">
-									<div className="hotel-img">
-										<img src="assets/img/hotels/1.jpg" alt="Hotel 1" className="img-fluid" />
-									</div>
-									<h3><a href="#">Hotel 1</a></h3>
-									<div className="stars">
-										<i className="bi bi-star-fill"></i>
-										<i className="bi bi-star-fill"></i>
-										<i className="bi bi-star-fill"></i>
-										<i className="bi bi-star-fill"></i>
-										<i className="bi bi-star-fill"></i>
-									</div>
-									<p>0.4 Mile from the Venue</p>
-								</div>
-							</div>
-							<div className="col-lg-4 col-md-6">
-								<div className="hotel">
-									<div className="hotel-img">
-										<img src="assets/img/hotels/2.jpg" alt="Hotel 2" className="img-fluid" />
-									</div>
-									<h3><a href="#">Hotel 2</a></h3>
-									<div className="stars">
-										<i className="bi bi-star-fill"></i>
-										<i className="bi bi-star-fill"></i>
-										<i className="bi bi-star-fill"></i>
-										<i className="bi bi-star-fill"></i>
-										<i className="bi bi-star-fill-half-full"></i>
-									</div>
-									<p>0.5 Mile from the Venue</p>
-								</div>
-							</div>
-							<div className="col-lg-4 col-md-6">
-								<div className="hotel">
-									<div className="hotel-img">
-										<img src="assets/img/hotels/3.jpg" alt="Hotel 3" className="img-fluid" />
-									</div>
-									<h3><a href="#">Hotel 3</a></h3>
-									<div className="stars">
-										<i className="bi bi-star-fill"></i>
-										<i className="bi bi-star-fill"></i>
-										<i className="bi bi-star-fill"></i>
-										<i className="bi bi-star-fill"></i>
-									</div>
-									<p>0.6 Mile from the Venue</p>
-								</div>
-							</div>
-						</div>
+						<SectionHeader title={AppData.Hotels.title} description={AppData.Hotels.description} />
+						<HotelsList hotels={AppData.Hotels.hotelsList} />
 					</div>
 				</section>
 
@@ -431,11 +384,7 @@ export default function Home(): JSX.Element {
 				<section id="faq">
 					<div className="container" data-aos="fade-up">
 						<SectionHeader title={AppData.FAQ.title} description={AppData.FAQ.description} />
-						<div className="row justify-content-center" data-aos="fade-up" data-aos-delay="100">
-							<div className="col-lg-9">
-								<QuestionList questions={AppData.FAQ.questionsList} />
-							</div>
-						</div>
+						<QuestionList questions={AppData.FAQ.questionsList} />
 					</div>
 				</section>
 
