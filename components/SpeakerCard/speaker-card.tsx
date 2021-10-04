@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { SpeakerCardProps } from './speaker-card.props';
 
-export const SpeakerCard = (speaker: SpeakerCardProps): JSX.Element => {
+export const SpeakerCard = ({speaker}: SpeakerCardProps): JSX.Element => {
     return (
         <div className="col-lg-4 col-md-6">
             <div className="speaker" data-aos="fade-up" data-aos-delay="100">

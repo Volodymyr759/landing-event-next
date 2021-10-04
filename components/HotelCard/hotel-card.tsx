@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { HotelCardProps } from './hotel-card.props';
 
-export const HotelCard = (hotel: HotelCardProps): JSX.Element => {
+export const HotelCard = ({hotel}: HotelCardProps): JSX.Element => {
     return (
         <div className="col-lg-4 col-md-6">
             <div className="hotel">

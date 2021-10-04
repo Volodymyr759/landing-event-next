@@ -87,14 +87,202 @@ export const AppData = {
             }
         ]
     },
-    Schedule:{
-        title: '',
-        shortDescription: '',
-        longDescription: '',
+    EventDays:{
+        title: 'Event Schedule',
+        shortDescription: 'Here is our event schedule',
+        fullDescription: 'Voluptatem nulla veniam soluta et corrupti consequatur neque eveniet officia. Eius necessitatibus voluptatem quis labore perspiciatis quia.',
         days: [
-
+            {
+                code: 'day-1',
+                title: 'Day 1'
+            },
+            {
+                code: 'day-2',
+                title: 'Day 2'
+            },
+            {
+                code: 'day-3',
+                title: 'Day 3'
+            },
         ]
     },
+    DaySchedules: [
+        {
+            dayCode: 'day-1',
+            dayItems: [
+                {
+                    time: 'Day 1 09:30 AM',
+                    imgSrc: '',
+                    imgAlt: '',
+                    boldTitle: 'Registration',
+                    italicTitle: '',
+                    description: 'Fugit voluptas iusto maiores temporibus autem numquam magnam.'
+                },
+                {
+                    time: 'Day 1 10:00 AM',
+                    imgSrc: '/assets/img/speakers/1.webp',
+                    imgAlt: 'Brenden Legros',
+                    boldTitle: 'Keynote ',
+                    italicTitle: 'Brenden Legros',
+                    description: 'Facere provident incidunt quos voluptas.'
+                },
+                {
+                    time: 'Day 1 11:00 AM',
+                    imgSrc: '/assets/img/speakers/2.webp',
+                    imgAlt: 'Hubert Hirthe',
+                    boldTitle: 'Et voluptatem iusto dicta nobis. ',
+                    italicTitle: 'Hubert Hirthe',
+                    description: 'Maiores dignissimos neque qui cum accusantium ut sit sint inventore.'
+                },
+                {
+                    time: 'Day 1 12:00 AM',
+                    imgSrc: '/assets/img/speakers/3.webp',
+                    imgAlt: 'Cole Emmerich',
+                    boldTitle: 'Explicabo et rerum quis et ut ea. ',
+                    italicTitle: 'Cole Emmerich',
+                    description: 'Veniam accusantium laborum nihil eos eaque accusantium aspernatur.'
+                },
+                {
+                    time: 'Day 1 02:00 PM',
+                    imgSrc: '/assets/img/speakers/4.webp',
+                    imgAlt: 'Jack Christiansen',
+                    boldTitle: 'Qui non qui vel amet culpa sequi. ',
+                    italicTitle: 'Jack Christiansen',
+                    description: 'Nam ex distinctio voluptatem doloremque suscipit iusto.'
+                },
+                {
+                    time: 'Day 1 03:00 PM',
+                    imgSrc: '/assets/img/speakers/5.webp',
+                    imgAlt: 'Alejandrin Littel',
+                    boldTitle: 'Quos ratione neque expedita asperiores. ',
+                    italicTitle: 'Alejandrin Littel',
+                    description: 'Eligendi quo eveniet est nobis et ad temporibus odio quo.'
+                },
+                {
+                    time: 'Day 1 04:00 PM',
+                    imgSrc: '/assets/img/speakers/6.webp',
+                    imgAlt: 'Willow Trantow',
+                    boldTitle: 'Quo qui praesentium nesciunt ',
+                    italicTitle: 'Willow Trantow',
+                    description: 'Voluptatem et alias dolorum est aut sit enim neque veritatis.'
+                },
+            ]
+        },
+        {
+            dayCode: 'day-2',
+            dayItems: [
+                {
+                    time: 'Day 2 10:00 AM',
+                    imgSrc: '/assets/img/speakers/1.webp',
+                    imgAlt: 'Brenden Legros',
+                    boldTitle: 'Libero corrupti explicabo itaque. ',
+                    italicTitle: 'Brenden Legros',
+                    description: 'Facere provident incidunt quos voluptas.'
+                },
+                {
+                    time: 'Day 2 11:00 AM',
+                    imgSrc: '/assets/img/speakers/2.webp',
+                    imgAlt: 'Hubert Hirthe',
+                    boldTitle: 'Et voluptatem iusto dicta nobis. ',
+                    italicTitle: 'Hubert Hirthe',
+                    description: 'Maiores dignissimos neque qui cum accusantium ut sit sint inventore.'
+                },
+                {
+                    time: 'Day 2 12:00 AM',
+                    imgSrc: '/assets/img/speakers/3.webp',
+                    imgAlt: 'Cole Emmerich',
+                    boldTitle: 'Explicabo et rerum quis et ut ea. ',
+                    italicTitle: 'Cole Emmerich',
+                    description: 'Veniam accusantium laborum nihil eos eaque accusantium aspernatur.'
+                },
+                {
+                    time: 'Day 2 12:00 AM',
+                    imgSrc: '/assets/img/speakers/3.webp',
+                    imgAlt: 'Cole Emmerich',
+                    boldTitle: 'Explicabo et rerum quis et ut ea. ',
+                    italicTitle: 'Cole Emmerich',
+                    description: 'Veniam accusantium laborum nihil eos eaque accusantium aspernatur.'
+                },
+                {
+                    time: 'Day 2 02:00 PM',
+                    imgSrc: '/assets/img/speakers/4.webp',
+                    imgAlt: 'Jack Christiansen',
+                    boldTitle: 'Qui non qui vel amet culpa sequi. ',
+                    italicTitle: 'Jack Christiansen',
+                    description: 'Nam ex distinctio voluptatem doloremque suscipit iusto.'
+                },
+                {
+                    time: 'Day 2 03:00 PM',
+                    imgSrc: '/assets/img/speakers/5.webp',
+                    imgAlt: 'Alejandrin Littel',
+                    boldTitle: 'Quos ratione neque expedita asperiores. ',
+                    italicTitle: 'Alejandrin Littel',
+                    description: 'Eligendi quo eveniet est nobis et ad temporibus odio quo.'
+                },
+                {
+                    time: 'Day 2 04:00 PM',
+                    imgSrc: '/assets/img/speakers/6.webp',
+                    imgAlt: 'Willow Trantow',
+                    boldTitle: 'Quo qui praesentium nesciunt ',
+                    italicTitle: 'Willow Trantow',
+                    description: 'Voluptatem et alias dolorum est aut sit enim neque veritatis.'
+                },
+            ]
+        },
+        {
+            dayCode: 'day-3',
+            dayItems: [
+                {
+                    time: 'Day 3 10:00 AM',
+                    imgSrc: '/assets/img/speakers/2.webp',
+                    imgAlt: 'Hubert Hirthe',
+                    boldTitle: 'Et voluptatem iusto dicta nobis. ',
+                    italicTitle: 'Hubert Hirthe',
+                    description: 'Maiores dignissimos neque qui cum accusantium ut sit sint inventore.'
+                },
+                {
+                    time: 'Day 3 11:00 AM',
+                    imgSrc: '/assets/img/speakers/3.webp',
+                    imgAlt: 'Cole Emmerich',
+                    boldTitle: 'Explicabo et rerum quis et ut ea. ',
+                    italicTitle: 'Cole Emmerich',
+                    description: 'Veniam accusantium laborum nihil eos eaque accusantium aspernatur.'
+                },
+                {
+                    time: 'Day 3 12:00 AM',
+                    imgSrc: '/assets/img/speakers/1.webp',
+                    imgAlt: 'Brenden Legros',
+                    boldTitle: 'Libero corrupti explicabo itaque. ',
+                    italicTitle: 'Brenden Legros',
+                    description: 'Facere provident incidunt quos voluptas.'
+                },
+                {
+                    time: 'Day 3 02:00 PM',
+                    imgSrc: '/assets/img/speakers/4.webp',
+                    imgAlt: 'Jack Christiansen',
+                    boldTitle: 'Qui non qui vel amet culpa sequi. ',
+                    italicTitle: 'Jack Christiansen',
+                    description: 'Nam ex distinctio voluptatem doloremque suscipit iusto.'
+                },
+                {
+                    time: 'Day 3 03:00 PM',
+                    imgSrc: '/assets/img/speakers/5.webp',
+                    imgAlt: 'Alejandrin Littel',
+                    boldTitle: 'Quos ratione neque expedita asperiores. ',
+                    italicTitle: 'Alejandrin Littel',
+                    description: 'Eligendi quo eveniet est nobis et ad temporibus odio quo.'
+                },
+                {
+                    time: 'Day 3 04:00 PM',
+                    imgSrc: '/assets/img/speakers/6.webp',
+                    imgAlt: 'Willow Trantow',
+                    boldTitle: 'Quo qui praesentium nesciunt ',
+                    italicTitle: 'Willow Trantow',
+                    description: 'Voluptatem et alias dolorum est aut sit enim neque veritatis.'
+                },
+            ]
+        }
+    ],
     Venue: {
         title: 'Event Venue',
         description: 'Event venue location info and gallery',

@@ -1,6 +1,6 @@
 import { DetailedHTMLProps, HTMLAttributes } from "react";
-import { ISupporter } from "../../infrastructure/interfaces/supporter.interface";
+import { IImage } from "../../infrastructure/interfaces/image.interface";
 
 export interface SupportersProps extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {
-    supporters: ISupporter[];
+    supporters: IImage[];
 }
