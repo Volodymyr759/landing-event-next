@@ -136,6 +136,36 @@ export const AppData = {
             },
         ]
     },
+    Hotels: {
+        title: 'Hotels',
+        description: 'Her are some nearby hotels',
+        hotelsList: [
+            {
+                title: 'Hotel 1',
+                description: '0.4 Mile from the Venue',
+                link: 'hotel1.html',
+                imgSrc: '/assets/img/hotels/1.webp',
+                imgAlt: 'Hotel 1',
+                stars: 5,
+            },
+            {
+                title: 'Hotel 2',
+                description: '0.5 Mile from the Venue',
+                link: 'hotel2.html',
+                imgSrc: '/assets/img/hotels/2.webp',
+                imgAlt: 'Hotel 2',
+                stars: 4,
+            },
+            {
+                title: 'Hotel 3',
+                description: '0.6 Mile from the Venue',
+                link: 'hotel3.html',
+                imgSrc: '/assets/img/hotels/3.webp',
+                imgAlt: 'Hotel 3',
+                stars: 5,
+            }
+        ]
+    },
     Gallery: {
         title: 'Gallery',
         description: 'Check our gallery from the recent events',
