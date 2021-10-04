@@ -1,4 +1,4 @@
-export interface ISupporter {
+export interface IImage {
     imgSrc: string;
     imgAlt: string;
 }

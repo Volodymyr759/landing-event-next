@@ -1,13 +1,6 @@
 import { DetailedHTMLProps, HTMLAttributes } from "react";
+import { ISpeaker } from "../../infrastructure/interfaces/speaker.interface";
 
 export interface SpeakerCardProps extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {
-    imgSrc: string;
-    imgAlt?: string;
-    webPageLink?: string;
-    name: string;
-    description: string;
-    twitter?: string;
-    facebook?: string;
-    instagram?: string;
-    linkedin?: string;
+    speaker: ISpeaker;
 }

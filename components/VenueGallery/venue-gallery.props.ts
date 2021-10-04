@@ -1,6 +1,6 @@
 import { DetailedHTMLProps, HTMLAttributes } from "react";
-import { IVenue } from "../../infrastructure/interfaces/venue.interface";
+import { IImage } from "../../infrastructure/interfaces/image.interface";
 
 export interface VenueGalleryProps extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {
-    venueGallery: IVenue[];
+    venueGallery: IImage[];
 }
