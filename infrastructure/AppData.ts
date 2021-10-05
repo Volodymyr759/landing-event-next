@@ -459,5 +459,97 @@ export const AppData = {
                 answer: 'Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque. Pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. Nibh tellus molestie nunc non blandit massa enim nec.' 
             }
         ]
-    }
+    },
+    Tickets: [
+        {
+            accessType: 'Standard Access',
+            price: 150,
+            activities: [
+                {
+                    title: 'Regular Seating',
+                    allowed: true
+                },
+                {
+                    title: 'Coffee Break',
+                    allowed: true
+                },
+                {
+                    title: 'Custom Badge',
+                    allowed: true
+                },
+                {
+                    title: 'Community Access',
+                    allowed: false
+                },
+                {
+                    title: 'Workshop Access',
+                    allowed: false
+                },
+                {
+                    title: 'After Party',
+                    allowed: false
+                },
+            ]
+        },
+        {
+            accessType: 'Pro Access',
+            price: 250,
+            activities: [
+                {
+                    title: 'Regular Seating',
+                    allowed: true
+                },
+                {
+                    title: 'Coffee Break',
+                    allowed: true
+                },
+                {
+                    title: 'Custom Badge',
+                    allowed: true
+                },
+                {
+                    title: 'Community Access',
+                    allowed: true
+                },
+                {
+                    title: 'Workshop Access',
+                    allowed: false
+                },
+                {
+                    title: 'After Party',
+                    allowed: false
+                },
+            ]
+        },
+        {
+            accessType: 'Premium Access',
+            price: 350,
+            activities: [
+                {
+                    title: 'Regular Seating',
+                    allowed: true
+                },
+                {
+                    title: 'Coffee Break',
+                    allowed: true
+                },
+                {
+                    title: 'Custom Badge',
+                    allowed: true
+                },
+                {
+                    title: 'Community Access',
+                    allowed: true
+                },
+                {
+                    title: 'Workshop Access',
+                    allowed: true
+                },
+                {
+                    title: 'After Party',
+                    allowed: true
+                },
+            ]
+        }
+    ]
 };
