@@ -8,6 +8,7 @@ import { SectionHeader } from '../components/SectionHeader/section-header';
 import { SendMessageForm } from '../components/SendMessageForm/send-message';
 import { SpeakerList } from '../components/Speakers/speakers';
 import { SupporterList } from '../components/Supporters/supporters';
+import { TicketList } from '../components/TicketList/ticket-list';
 import { QuestionList } from '../components/QuestionList/question-list';
 import { VenueGallery } from '../components/VenueGallery/venue-gallery';
 import { NotificationType } from '../infrastructure/enums/notification-types.enum';
@@ -204,107 +205,7 @@ export default function Home(): JSX.Element {
 					<div className="container" data-aos="fade-up">
 						<SectionHeader title="Buy Tickets" description="Velit consequatur consequatur inventore iste fugit unde omnis eum aut." />
 						<div className="row">
-							<div className="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-								<div className="card mb-5 mb-lg-0">
-									<div className="card-body">
-										<h5 className="card-title text-muted text-uppercase text-center">Standard Access</h5>
-										<h6 className="card-price text-center">$150</h6>
-										<hr />
-										<ul className="fa-ul">
-											<li><span className="fa-li"><i className="fa fa-check"></i></span>Regular Seating
-											</li>
-											<li><span className="fa-li"><i className="fa fa-check"></i></span>Coffee Break</li>
-											<li><span className="fa-li"><i className="fa fa-check"></i></span>Custom Badge</li>
-											<li className="text-muted">
-												<span className="fa-li"> <i className="fa fa-times"></i></span>
-												Community Access
-											</li>
-											<li className="text-muted">
-												<span className="fa-li"> <i className="fa fa-times"></i></span>
-												Workshop Access
-											</li>
-											<li className="text-muted">
-												<span className="fa-li"><i className="fa fa-times"></i></span>
-												After Party
-											</li>
-										</ul>
-										<hr />
-										<div className="text-center">
-											<button type="button" className="btn" data-bs-toggle="modal"
-												data-bs-target="#buy-ticket-modal" data-ticket-type="standard-access">
-												Buy Now
-											</button>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div className="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-								<div className="card mb-5 mb-lg-0">
-									<div className="card-body">
-										<h5 className="card-title text-muted text-uppercase text-center">Pro Access</h5>
-										<h6 className="card-price text-center">$250</h6>
-										<hr />
-										<ul className="fa-ul">
-											<li>
-												<span className="fa-li"><i className="fa fa-check"></i></span>
-												Regular Seating
-											</li>
-											<li>
-												<span className="fa-li"><i className="fa fa-check"></i></span>
-												Coffee Break
-											</li>
-											<li><span className="fa-li"><i className="fa fa-check"></i></span>
-												Custom Badge
-											</li>
-											<li>
-												<span className="fa-li"><i className="fa fa-check"></i></span>
-												Community Access
-											</li>
-											<li className="text-muted">
-												<span className="fa-li"><i className="fa fa-times"></i></span>
-												Workshop Access
-											</li>
-											<li className="text-muted">
-												<span className="fa-li"><i className="fa fa-times"></i></span>
-												After Party
-											</li>
-										</ul>
-										<hr />
-										<div className="text-center">
-											<button type="button" className="btn" data-bs-toggle="modal"
-												data-bs-target="#buy-ticket-modal" data-ticket-type="pro-access">
-												Buy Now
-											</button>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div className="col-lg-4" data-aos="fade-up" data-aos-delay="300">
-								<div className="card">
-									<div className="card-body">
-										<h5 className="card-title text-muted text-uppercase text-center">Premium Access</h5>
-										<h6 className="card-price text-center">$350</h6>
-										<hr />
-										<ul className="fa-ul">
-											<li><span className="fa-li"><i className="fa fa-check"></i></span>Regular Seating
-											</li>
-											<li><span className="fa-li"><i className="fa fa-check"></i></span>Coffee Break</li>
-											<li><span className="fa-li"><i className="fa fa-check"></i></span>Custom Badge</li>
-											<li><span className="fa-li"><i className="fa fa-check"></i></span>Community Access
-											</li>
-											<li><span className="fa-li"><i className="fa fa-check"></i></span>Workshop Access
-											</li>
-											<li><span className="fa-li"><i className="fa fa-check"></i></span>After Party</li>
-										</ul>
-										<hr />
-										<div className="text-center">
-											<button type="button" className="btn" data-bs-toggle="modal"
-												data-bs-target="#buy-ticket-modal" data-ticket-type="premium-access">Buy
-												Now</button>
-										</div>
-									</div>
-								</div>
-							</div>
+							<TicketList tickets={AppData.Tickets} />
 						</div>
 					</div>
 					<div id="buy-ticket-modal" className="modal fade">
@@ -313,7 +214,8 @@ export default function Home(): JSX.Element {
 								<div className="modal-header">
 									<h4 className="modal-title">Buy Tickets</h4>
 									<button type="button" className="btn-close" data-bs-dismiss="modal"
-										aria-label="Close"></button>
+										aria-label="Close">
+									</button>
 								</div>
 								<BuyTicket />
 							</div>
