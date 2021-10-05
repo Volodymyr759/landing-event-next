@@ -91,6 +91,7 @@ export default function Home(): JSX.Element {
 			</section>
 
 			<main id="main">
+
 				<section id="about">
 					<div className="container" data-aos="fade-up">
 						<div className="row">
@@ -314,9 +315,7 @@ export default function Home(): JSX.Element {
 									<button type="button" className="btn-close" data-bs-dismiss="modal"
 										aria-label="Close"></button>
 								</div>
-
 								<BuyTicket />
-
 							</div>
 						</div>
 					</div>
