@@ -1,34 +1,31 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Description:
 
-## Getting Started
+This is a [Next.js](https://nextjs.org/) project written in TypeScript.
 
-First, run the development server:
+The main purpose of the landing-page is to present complete information about the event on one page with the possibility of subscribing to news, ordering tickets and sending a message to the event-agency administrator.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+The landing page uses the classic Bootstrap-design which is sensitive to all screen sizes of devices.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Demo - version: https://landing-event-next.vercel.app
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+Hosting and domain name are free, more info: https://vercel.com/
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## Functionality:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+All users are anonymous.
 
-## Learn More
+News subscription: the user enters his e-mail address in the NEWSLETTER section and clicks the Subscribe button - the server part of the site will send a message to the administrator and confirmation to the user at the specified e-mail.
 
-To learn more about Next.js, take a look at the following resources:
+Buy a ticket: the user selects one of the ticket options, enters his name, address and clicks the "Buy Now" button - the site will send a message to the administrator about ordering a ticket, as well as an confirmation message to the user at the specified e-mail.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+CONTACT US message: the user enters his name, e-mail, subject and text of the message, clicks the "Send message" button - the site will send a message to the administrator.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Content Management
 
-## Deploy on Vercel
+The administrator can change all the information about the event by editing the json data file: https://github.com/Volodymyr759/landing-event-next/blob/main/infrastructure/AppData.ts (needed create a separated repository for the administrator).
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+After making changes, click "commit" - the linked web server keeps track of updates of the main branch of the repository and automatically publishes changes to the site (takes about 1 minute).
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Contact
+
+Regarding the use, deeper modifications of the design and changes in the functionality of the project, please use the mail: logisticmaster.2000@gmail.com
